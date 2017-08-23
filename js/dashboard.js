@@ -44,7 +44,7 @@ function init_5(){
                                 value: ["Members"]
                         },
 			 color: function(d){
-                                return '#006400';
+                                return '#B53F35';
                         },
                         type: 'area'
                 },
@@ -240,7 +240,7 @@ function init_2(){
 					value: ["Count"]
 				},
 				color: function(d){
-					return '#FF8C00';
+					return '#2C8437';
 				},
 				type: 'spline'
 			},
@@ -319,7 +319,7 @@ function init_4(){
                                 value: ["Count"]
                         },
 			color: function(d){
-				return '#800000';
+				return '#B5A535';
 			},      
                         type: 'bar'
                 },
