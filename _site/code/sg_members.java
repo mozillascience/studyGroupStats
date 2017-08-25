@@ -56,7 +56,7 @@ public class sg_members {
 
 			}
 		}
-		try (FileWriter file = new FileWriter("/home/ubuntu/AnamikaD.github.io/data/sg_members.json")) {
+		try (FileWriter file = new FileWriter("/home/ubuntu/Documents/sg_members.json")) {
 			file.write(single_event.toJSONString());
 		} 
 				 

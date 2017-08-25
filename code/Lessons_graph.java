@@ -31,7 +31,7 @@ public class Lessons_graph {
                 	e.printStackTrace();
            	 }
 		try {
-			File f = new File("/home/ubuntu/Documents/count");
+			File f = new File("/home/ubuntu/studyGroupStats/code/count");
 			//Scanner sc = new Scanner(new BufferedReader(new FileReader(f)));
 			FileReader fr = new FileReader(f);
 			BufferedReader br = new BufferedReader(fr);
@@ -73,13 +73,13 @@ public class Lessons_graph {
 				types.add(obj_type);
 			}
 		}
-		try(FileWriter file_level = new FileWriter("/home/ubuntu/AnamikaD.github.io/data/levels.json")){
+		try(FileWriter file_level = new FileWriter("/home/ubuntu/studyGroupStats/levels.json")){
 			file_level.write(levels.toJSONString());
 			
 		}catch (Exception e){
 			e.printStackTrace();
 		}
-		try(FileWriter file_type = new FileWriter("/home/ubuntu/AnamikaD.github.io/data/types.json")){
+		try(FileWriter file_type = new FileWriter("/home/ubuntu/studyGroupStats/types.json")){
                         file_type.write(types.toJSONString());
                         
                 }catch (Exception e){

@@ -56,7 +56,7 @@ public class CrunchifyJSONFileWrite {
 
 			}
 		}
-		try (FileWriter file = new FileWriter("/home/ubuntu/Documents/single_event.json")) {
+		try (FileWriter file = new FileWriter("/home/ubuntu/studyGroupStats/single_event.json")) {
 			file.write(single_event.toJSONString());
 		} 
 				 
