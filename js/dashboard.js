@@ -44,7 +44,7 @@ function init_5(){
                                 value: ["Members"]
                         },
 			 color: function(d){
-                                return '#B53F35';
+                                return '#e74c3c';
                         },
                         type: 'area'
                 },
@@ -198,7 +198,7 @@ function init_1(){
 				value: ["Event"]
 			},
 			color: function(d){
-                                return '#295076';
+                                return '#1abc9c';
                         },
 			type: 'bar'
 		},
@@ -243,7 +243,7 @@ function init_2(){
 					value: ["Count"]
 				},
 				color: function(d){
-					return '#2C8437';
+					return '#f1c40f';
 				},
 				type: 'spline'
 			},
@@ -303,7 +303,7 @@ function init_3(){
 		onmouseout: function (d, i) { console.log("onmouseout", d, i); }
         	},
 		color: {
-    			pattern: ['#B5A535', '#2C8437', '#B53F35']
+    			pattern: ['#3498db', '#9b59b6', '#34495e']
   		},
 		donut: {
                		title: "Levels of Lessons"
@@ -325,7 +325,7 @@ function init_4(){
                                 value: ["Count"]
                         },
 			color: function(d){
-				return '#B5A535';
+				return '#e67e22';
 			},      
                         type: 'bar'
                 },
