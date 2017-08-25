@@ -197,6 +197,9 @@ function init_1(){
 				x: 'Name',
 				value: ["Event"]
 			},
+			color: function(d){
+                                return '#295076';
+                        },
 			type: 'bar'
 		},
 		axis: {
@@ -293,12 +296,15 @@ function init_3(){
 			json: [ data ],
 			keys: {
           			value: sites,
-  			},
+  			},	
 		type:'donut',
 		onclick: function (d, i) { console.log("onclick", d, i); },
 	        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
 		onmouseout: function (d, i) { console.log("onmouseout", d, i); }
         	},
+		color: {
+    			pattern: ['#B5A535', '#2C8437', '#B53F35']
+  		},
 		donut: {
                		title: "Levels of Lessons"
         	}
