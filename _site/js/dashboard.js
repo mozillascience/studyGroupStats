@@ -32,7 +32,7 @@ $(document).ready(function () {
 
 function init_5(){
 	var request_5 = new XMLHttpRequest();
-        request_5.open("GET", "../data/sg_members.json", false);
+        request_5.open("GET", "sg_members.json", false);
         request_5.send(null);
         my_JSON_object_5 = JSON.parse(request_5.responseText);
 	var chart_5 = c3.generate({
@@ -126,7 +126,7 @@ function JSONtoCSV(JSONData, Report_title, show_label){
 
 function export_csv_1(){
 	var req_1 = new XMLHttpRequest();
-	req_1.open("GET", "../data/single_event.json", false);
+	req_1.open("GET", "single_event.json", false);
 	req_1.send(null);
 	var json_obj = JSON.parse(req_1.responseText);
 //	alert(json_obj);
@@ -135,7 +135,7 @@ function export_csv_1(){
 
 function export_csv_2(){
 	var req_2 = new XMLHttpRequest();
-        req_2.open("GET", "../data/countries.json", false);
+        req_2.open("GET", "countries.json", false);
         req_2.send(null);
         var json_obj_2 = JSON.parse(req_2.responseText);
 	JSONtoCSV(json_obj_2, "study_group_countries", true);
@@ -186,7 +186,7 @@ function show(name){
 
 function init_1(){
 	var request_1 = new XMLHttpRequest();
-	request_1.open("GET", "../data/single_event.json", false);
+	request_1.open("GET", "single_event.json", false);
 	request_1.send(null);
 	my_JSON_object_1 = JSON.parse(request_1.responseText);
 	chart= c3.generate({
@@ -227,7 +227,7 @@ function init_1(){
 
 function init_2(){			
 		var request_2 = new XMLHttpRequest();
- 		request_2.open("GET", "../data/types.json", false);
+ 		request_2.open("GET", "types.json", false);
    		request_2.send(null);
    		var my_JSON_object_2 = JSON.parse(request_2.responseText);
 
@@ -278,7 +278,7 @@ function init_2(){
 
 function init_3(){
 	var request = new XMLHttpRequest();
-	request.open("GET", "../data/levels.json", false);
+	request.open("GET", "levels.json", false);
 	request.send(null);
 	var my_JSON = JSON.parse(request.responseText);
 	var data = {};
@@ -307,7 +307,7 @@ function init_3(){
 
 function init_4(){
         var request_4 = new XMLHttpRequest();
-        request_4.open("GET", "../data/countries.json", false);
+        request_4.open("GET", "countries.json", false);
         request_4.send(null); 
         my_JSON_object_4 = JSON.parse(request_4.responseText);
         var chart= c3.generate({
