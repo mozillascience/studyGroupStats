@@ -55,7 +55,7 @@ public class location {
 				loc_obj.put("Count", entry.getValue());
 				loc_json.add(loc_obj);
 			}
-			try(FileWriter file = new FileWriter("/home/ubuntu/Documents/countries.json")){
+			try(FileWriter file = new FileWriter("/home/ubuntu/studyGroupStats/countries.json")){
 				file.write(loc_json.toJSONString());			
 	
 			}catch (Exception e){
